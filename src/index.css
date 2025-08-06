@@ -9,6 +9,15 @@
 -------------------------------------- */
 @custom-variant dark (&:is(.dark *));
 
+#root {
+  @apply w-full h-screen;
+}
+
+
+.eyeButton {
+  @apply bg-transparent
+}
+
 /* -------------------------------------
    Shared Root Styles
 -------------------------------------- */
