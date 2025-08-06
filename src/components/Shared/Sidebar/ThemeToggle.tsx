@@ -12,7 +12,7 @@ export function ThemeToggle() {
   const currentTheme = theme === "system" ? systemTheme : theme;
 
   return (
-    <button onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")}>
+    <button className="h-9 flex items-center justify-center text-white" onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")}>
       Switch to {currentTheme === "dark" ? "Light" : "Dark"} Mode
     </button>
   );
