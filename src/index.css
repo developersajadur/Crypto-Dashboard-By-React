@@ -2,6 +2,7 @@
    Tailwind CSS Core and Plugin Imports
 -------------------------------------- */
 @import "tailwindcss";
+
 @import "tw-animate-css";
 
 /* -------------------------------------
