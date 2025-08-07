@@ -4,7 +4,7 @@ import {
 } from "react-router-dom";
 import "./index.css";
 import React from "react";
-import router from "./routes/router.tsx";
+import router from "./routes/router";
 
 
 

@@ -15,7 +15,7 @@
 
 
 .eyeButton {
-  @apply bg-transparent
+  @apply bg-transparent ;
 }
 
 /* -------------------------------------

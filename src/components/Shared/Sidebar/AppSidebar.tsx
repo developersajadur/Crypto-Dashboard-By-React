@@ -28,10 +28,11 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar"
-import { NavDocuments } from "./NavDocuments"
+// import { NavDocuments } from "./NavDocuments"
 import { NavSecondary } from "./NavSecondary"
 import { NavUser } from "./NavUser"
 import { NavMain } from "./NavMain"
+import { Link } from "react-router-dom"
 
 const data = {
   navMain: [
@@ -155,17 +156,17 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
               asChild
               className="data-[slot=sidebar-menu-button]:!p-1.5"
             >
-              <a href="#">
+              <Link to="#">
                 <IconInnerShadowTop className="!size-5" />
                 <span className="text-base font-semibold">Crypto Dashboard</span>
-              </a>
+              </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>
         </SidebarMenu>
       </SidebarHeader>
       <SidebarContent>
         <NavMain items={data.navMain} />
-        <NavDocuments items={data.documents} />
+        {/* <NavDocuments items={data.documents} /> */}
         <NavSecondary items={data.navSecondary} className="mt-auto" />
       </SidebarContent>
       <SidebarFooter>

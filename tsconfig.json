@@ -1,18 +1,19 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ],
   "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/*"]
-    },
-    "verbatimModuleSyntax": true,
-    "isolatedModules": true,
-    "module": "ESNext",
     "target": "ESNext",
-    "moduleResolution": "bundler"
-  }
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "baseUrl": ".", 
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "/dist"
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
 }
