@@ -1,42 +1,12 @@
-
-
 export default function Loader() {
   return (
-    <>
-      <style>{`
-        .loader {
-          width: 50px;
-          aspect-ratio: 1;
-          display: grid;
-          place-items: center;
-        }
-        .loader::before,
-        .loader::after {    
-          content: "";
-          grid-area: 1 / 1;
-          --c: no-repeat radial-gradient(farthest-side, #25b09b 92%, transparent);
-          background: 
-            var(--c) 50% 0, 
-            var(--c) 50% 100%, 
-            var(--c) 100% 50%, 
-            var(--c) 0 50%;
-          background-size: 12px 12px;
-          animation: l12 1s infinite;
-        }
-        .loader::before {
-          margin: 4px;
-          filter: hue-rotate(45deg);
-          background-size: 8px 8px;
-          animation-timing-function: linear;
-        }
-        @keyframes l12 {
-          100% {
-            transform: rotate(0.5turn);
-          }
-        }
-      `}</style>
-
-      <div className="loader"></div>
-    </>
+    <div className="w-full h-screen flex justify-center items-center">
+      <div
+        className="loader border-t-4 rounded-full border-yellow-500 bg-yellow-300 animate-spin
+          aspect-square w-20 h-20 flex justify-center items-center text-yellow-700 text-4xl"
+      >
+        $
+      </div>
+    </div>
   );
 }
